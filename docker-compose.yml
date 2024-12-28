@@ -1,8 +1,6 @@
-version: '3'
-
 services:
   app_vet:
-    build: clinica_veterinaria
+    build: clinicavet
     mem_limit: 512m
     ports:
       - "9475:9475"
