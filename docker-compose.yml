@@ -1,7 +1,6 @@
 services:
   app_vet:
     build: clinicavet
-    mem_limit: 512m
     ports:
       - "9475:9475"
     environment:
