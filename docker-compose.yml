@@ -24,16 +24,4 @@ services:
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       timeout: 10s
-      retries: 10
-
-   phpmyadmin:
-    image: phpmyadmin:latest
-    ports:
-      - "9090:80"
-    environment:
-      PMA_HOST: wdpvendas
-      MYSQL_ROOT_PASSWORD: 102XfKCWeJ6fRBz6VFd5wZKZGlVEHdc1mGz0HwlHER8v5FC7e47m2muI0uN58oBF
-    restart: always
-    depends_on:
-      wdpvendas:
-        condition: service_healthy   
+      retries: 10 
